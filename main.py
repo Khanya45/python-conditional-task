@@ -1,16 +1,10 @@
-# dog_name = ('choc', 'patrick', 'bobbie' )
-# print("Hi there" +" "+dog_name[2])
-
-# initialising variables
-_pi = 3.14 # constant variable
-iradius = int(input("insert a radius "))
-
-# calculations
-area = round(_pi*iradius**2 , 2)  # calculating area of a circle using user's input
-diameter = iradius*2 # calculating diameter of a circle
-cmf = round(2*_pi*iradius , 2) # calculating circumference of a circle
-
-# converting an int to str (print can only display str data type)
-print("Area of a circle: " + str(area) + "cm^2")
-print("Diameter of a circle: " + str(diameter) + "cm")
-print("Circumference of a circle: " + str(cmf) + "cm")
+current_speed = float(input("What is your current speed: "))
+speed_allowed = float(input("What was the avg speed allowed on the road: "))
+diff = current_speed - speed_allowed
+points = diff // 5
+if current_speed <= speed_allowed:
+    print("Ok")
+elif points <= 12 :
+    print("Points: " + str(points))
+else :
+    print("You are going to jail")
